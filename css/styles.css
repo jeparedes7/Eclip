@@ -103,7 +103,7 @@ h2{
 
 /* Grid Inicio */
 
-.bodyIndex{
+/* .bodyIndex{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 85px 1fr 1fr 60px;
@@ -111,7 +111,7 @@ h2{
                         "main main main main"
                         "main main main main"
                         "footer footer footer footer";
-}
+} */
 
 .header{
     grid-area: header;
@@ -119,14 +119,19 @@ h2{
 
 .main{
     grid-area: main;
+    height: 800px;
 }
 
 .section1{
 text-align: center;
+margin-bottom: 30px;
 }
 
 .section2{
-text-align: center;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footer{
@@ -139,7 +144,7 @@ text-align: center;
 
 /* Grid Nosotros */
 
-.bodyNosotros{
+/* .bodyNosotros{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 1fr 1fr 60px;
@@ -147,7 +152,7 @@ text-align: center;
                             "main main main"
                             "main main main"
                             "footer footer footer";
-}
+} */
 
 
 .mainNosotros{
@@ -171,7 +176,7 @@ text-align: center;
 
 
 /* EVENTOS */
-
+/* 
 .bodyEvento{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -179,14 +184,18 @@ text-align: center;
     grid-template-areas: "header header header"
                         "main main main"
                         "footer footer footer";
-}
+} */
 
 .contenedorEvento{
     grid-area: main;
     color: white;
     margin-left: 30px;
     margin-right: 30px;
-    height: 60vh;
+    height: 80vh;
+}
+
+.titulo{
+    margin-bottom: 5px;
 }
 
 .contenedorEvento section{
@@ -196,7 +205,7 @@ text-align: center;
 .seccion1{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #110c24;
     border: #bdbfc9 solid 1px;
     padding: 10px;
@@ -221,14 +230,14 @@ text-align: center;
 
 /* TICKETS */
 
-.bodyTickets{
+/* .bodyTickets{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 1fr 60px;
     grid-template-areas: "header header header"
                         "main main main"
                         "footer footer footer";
-}
+} */
 
 .contenedorTickets{
     grid-area: main;
@@ -279,18 +288,23 @@ text-align: center;
 
 /* Grid Contacto */
 
-.bodyContacto{
+/* .bodyContacto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 1fr 60px;
     grid-template-areas: "header header header"
                         "main main main"
                         "footer footer footer";
-}
+} */
 
 .mainContacto{
     grid-area: main;
 }
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width:767px){
@@ -299,6 +313,16 @@ text-align: center;
     .menu{
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .main{
+        height: 500px;
+    }
+
+    .menu li a{
+        padding: 2px;
+        
     }
         
     .section2 p{
@@ -307,9 +331,15 @@ text-align: center;
 
     .section2 img{
         width: 500px;
+        margin-top: 150px;
+        
     }
     .section1{
         height: 200px;
+    }
+    
+    .footer{
+        margin-top: 200px;
     }
 
     /* NOSOTROS */
@@ -329,8 +359,8 @@ text-align: center;
 
     .section1{
         height: 200px;
+        margin-bottom: 90px;
     }
-
         
     .section2 p{
         display: none;
@@ -338,8 +368,9 @@ text-align: center;
 
     /* NOSOTROS */
 
-    .imagenesNosotros{
-        flex-wrap: wrap;
+    .imagenesNosotros img{
+        /* flex-wrap: wrap; */
+        display: none;
     }
     
     
