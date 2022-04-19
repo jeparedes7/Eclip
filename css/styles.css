@@ -42,12 +42,12 @@ header{
     color: white;
     padding: 20px;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.8s;
 }
 
 .menu li a:hover{
-    transform: scale(1);
-    transition: transform 0.8s;
-    font-size: 1.1rem;
+    transform: scale(1.4);
 }
 
 
@@ -64,6 +64,11 @@ footer{
     margin: 0 10px;
     border-radius: 50%;
     font-size: 1.4rem;
+    transition: transform 0.8s;
+}
+
+.footerSocial a:hover{
+    transform: scale(1.5);
 }
 
 .footerSocial li{
@@ -209,22 +214,21 @@ margin-bottom: 30px;
     background-color: #110c24;
     border: #bdbfc9 solid 1px;
     padding: 10px;
-    transition: height 5s;
+    transition: height 2s;
 }
 
-.seccion1 :hover{
+.seccion1:hover{
     height: 120px;
-
 }
 
 .seccion2{
     background-color: #110c24;
     border: #bdbfc9 solid 1px;
     padding: 10px;
-    transition: height 5s;
+    transition: height 2s;
 }
 
-.seccion2 :hover{
+.seccion2:hover{
     height: 120px;
 }
 
