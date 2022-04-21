@@ -1,0 +1,32 @@
+header{
+    position: sticky;
+    top: 0;
+}
+
+
+.logo{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu{
+    background-color: #0c0a14;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px white solid;
+    li{
+        display: inline-block;
+        a{
+        list-style: none;
+        display: block;
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: transform 0.8s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }      
+    }
+}

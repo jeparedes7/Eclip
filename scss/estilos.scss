@@ -1,3 +1,7 @@
+@import "header";
+@import "footer";
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,79 +10,6 @@
 
 body{
     background-color: rgb(33, 22, 41);
-}
-
-/* Menu de navegacion */
-
-header{
-    position: sticky;
-    top: 0;
-}
-
-
-.logo{
-    height: 40px;
-    border-radius: 50%;
-}
-
-.menu{
-    background-color: #0c0a14;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px white solid;
-}
-
-.menu li{
-    display: inline-block;
-    
-}
-
-.menu li a{
-    list-style: none;
-    display: block;
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: transform 0.8s;
-}
-
-.menu li a:hover{
-    transform: scale(1.4);
-    
-}
-
-
-/* Footer */
-
-
-footer{
-    color: white;
-}
-
-.footerSocial a{
-    color: #bdbfc9;
-    padding: 10px;
-    margin: 0 10px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: transform 0.8s;
-}
-
-.footerSocial a:hover{
-    transform: scale(1.5)
-}
-
-.footerSocial li{
-    display: inline-block;
-}
-
-.footerSocial{
-    padding: 10px;
-}
-
-h2{
-    font-size: 1rem;
 }
 
 
@@ -92,12 +23,11 @@ h2{
 
 .section1{
     height: 150px;
-}
-
-.section1 h2{
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    h2{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 .section2 p{
@@ -164,12 +94,11 @@ margin-bottom: 30px;
     margin-bottom: 50px;
     text-align: center;
     color: whitesmoke;
-}
-
-.mainNosotros div{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    div{    
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
 }
 
 
@@ -195,15 +124,15 @@ margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
     height: 1000px;
+    section{
+        margin-top: 20px;
+    }
 }
 
 .titulo{
     margin-bottom: 5px;
 }
 
-.contenedorEvento section{
-    margin-top: 20px;
-}
 
 .seccion1{
     /* display: flex;
@@ -213,11 +142,9 @@ margin-bottom: 30px;
     border: #bdbfc9 solid 1px;
     padding: 10px;
     transition: height 5s;
-}
-
-.seccion1 :hover{
-    height: 120px;
-
+    &:hover{
+        height: 120px;
+    }
 }
 
 .seccion2{
@@ -225,10 +152,9 @@ margin-bottom: 30px;
     border: #bdbfc9 solid 1px;
     padding: 10px;
     transition: height 5s;
-}
-
-.seccion2 :hover{
-    height: 120px;
+    &:hover{
+        height: 120px;
+    }
 }
 
 .seccion3{
@@ -236,22 +162,22 @@ margin-bottom: 30px;
     border: #bdbfc9 solid 1px;
     padding: 10px;
     transition: height 5s;
+    &:hover{
+        height: 120px;
+    }
 }
 
-.seccion3 :hover{
-    height: 120px;
-}
 
 .seccion4{
     background-color: #110c24;
     border: #bdbfc9 solid 1px;
     padding: 10px;
     transition: height 5s;
+    &:hover{
+        height: 120px;
+    }
 }
 
-.seccion4 :hover{
-    height: 120px;
-}
 
 /* TICKETS */
 
@@ -269,11 +195,12 @@ margin-bottom: 30px;
     height: 55vh;
     color: white;
     margin: 20px;
+    div{    
+        margin-top: 30px;
+    }
 }
 
-.contenedorTickets div{
-    margin-top: 30px;
-}
+
 /* CONTACTOS */
 
 .formularioContacto{

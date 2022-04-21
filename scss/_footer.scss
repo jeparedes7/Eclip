@@ -1,0 +1,28 @@
+/* Footer */
+
+
+footer{
+    color: white;
+}
+
+.footerSocial{
+    padding: 10px;
+    li{
+        display: inline-block;
+        a{
+            color: #bdbfc9;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: transform 0.8s;
+            &:hover{
+                transform: scale(1.5)
+            }
+        }
+    }    
+}
+
+h2{
+    font-size: 1rem;
+}
