@@ -1,5 +1,6 @@
 @import "header";
 @import "footer";
+@import "variables";
 
 
 *{
@@ -138,10 +139,10 @@ margin-bottom: 30px;
     /* display: flex;
     flex-direction: column;
     align-items: flex-start; */
-    background-color: #110c24;
-    border: #bdbfc9 solid 1px;
-    padding: 10px;
-    height: 110px;
+    background-color: map-get($estilos, color);
+    border: map-get($estilos, borde);
+    padding: map-get($estilos, padding);
+    height: map-get($estilos, altura);
     &:hover{
         transition: height 2s;
         height: 300px;
@@ -149,10 +150,10 @@ margin-bottom: 30px;
 }
 
 .seccion2{
-    background-color: #110c24;
-    border: #bdbfc9 solid 1px;
-    padding: 10px;
-    height: 110px;
+    background-color: map-get($estilos, color);
+    border: map-get($estilos, borde);
+    padding: map-get($estilos, padding);
+    height: map-get($estilos, altura);
     &:hover{
         transition: height 2s;
         height: 300px;
@@ -160,27 +161,14 @@ margin-bottom: 30px;
 }
 
 .seccion3{
-    background-color: #110c24;
-    border: #bdbfc9 solid 1px;
-    padding: 10px;
-    height: 110px;
-    &:hover{
-        transition: height 2s;
-        height: 300px;
-    }
+    @extend .seccion1;
 }
 
 
 .seccion4{
-    background-color: #110c24;
-    border: #bdbfc9 solid 1px;
-    padding: 10px;
-    height: 110px;
-    &:hover{
-        transition: height 2s;
-        height: 300px;
-    }
-}
+    @extend .seccion1;
+    } 
+
 
 
 /* TICKETS */

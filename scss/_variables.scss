@@ -1,0 +1,33 @@
+/* MAPAS */
+
+$tamañoLetra: (
+    informativo: 15px,
+    ventas: 18px
+);
+
+@each $letra, $tamaño in $tamañoLetra {
+    .texto--#{$letra} {
+        font-size: $tamaño;
+    }
+    
+}
+
+
+
+// MAP GET - usado en la pagina eventos //
+
+$estilos: (
+    color: #110c24,
+    borde: #bdbfc9 solid 1px,
+    altura: 110px,
+    padding: 10px
+)
+
+
+
+// MIXINS // 
+
+// @mixin box($padding, $margin){
+//     padding: $padding;
+//     margin: $margin;
+// }
